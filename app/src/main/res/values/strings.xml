@@ -9,4 +9,6 @@
     <string name="vegetarian_food_item">vegetarian food item</string>
     <string name="fair_trade_icon">fair trade icon</string>
     <string name="bean_icon">bean icon</string>
+    <string name="back_button">Back button</string>
+    <string name="favorite_button">favorite button</string>
 </resources>

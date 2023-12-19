@@ -5,43 +5,57 @@
     android:padding="16dp"
     android:background="#D2B48C">
 
-    <FrameLayout
-        android:id="@+id/picture"
+    <RelativeLayout
+        android:id="@+id/shopPicture"
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:gravity="center">
 
-        <!-- Кнопки, которые будут поверх ImageView -->
+        <!-- ImageView -->
         <ImageView
             android:id="@+id/logoImageView"
             android:layout_width="238dp"
             android:layout_height="320dp"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:contentDescription="@string/logo_description"
             android:src="@drawable/coffeeshop" />
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
+            android:layout_width="52dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|start"
-            android:text="Button 1" />
+            android:layout_alignStart="@id/logoImageView"
+            android:layout_alignTop="@id/logoImageView"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:rotationX="0"
+            android:textColor="@android:color/transparent"
+            android:visibility="visible"
+            android:contentDescription="@string/back_button"/>
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="52dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:text="Button 2" />
+            android:layout_alignStart="@id/logoImageView"
+            android:layout_alignTop="@id/logoImageView"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:rotationX="0"
+            android:textColor="@android:color/transparent"
+            android:visibility="visible"
+            android:contentDescription="@string/favorite_button"/>
 
-    </FrameLayout>
+    </RelativeLayout>
 
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
-        android:layout_below="@id/picture"
+        android:layout_below="@id/shopPicture"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
