@@ -5,18 +5,43 @@
     android:padding="16dp"
     android:background="#D2B48C">
 
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="238dp"
+    <FrameLayout
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:src="@drawable/coffeeshop"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/logo_description" />
+        android:gravity="center">
+
+        <!-- Кнопки, которые будут поверх ImageView -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="238dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/coffeeshop" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="Button 1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="Button 2" />
+
+    </FrameLayout>
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
-        android:layout_below="@id/logoImageView"
+        android:layout_below="@id/picture"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
