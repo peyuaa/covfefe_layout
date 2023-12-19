@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">covfefe</string>
+    <string name="make_a_call">Make a call</string>
+    <string name="shop_description">Место, где вкусное значит полезное</string>
+    <string name="reviews_number">(187 reviews)</string>
+    <string name="coffee_shop_name">Garden Room Coffee</string>
+    <string name="logo_description">coffee shop photo</string>
+    <string name="natural_food_icon">natural food icon</string>
+    <string name="vegetarian_food_item">vegetarian food item</string>
+</resources>
