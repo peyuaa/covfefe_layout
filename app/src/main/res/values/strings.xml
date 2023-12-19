@@ -7,4 +7,6 @@
     <string name="logo_description">coffee shop photo</string>
     <string name="natural_food_icon">natural food icon</string>
     <string name="vegetarian_food_item">vegetarian food item</string>
+    <string name="fair_trade_icon">fair trade icon</string>
+    <string name="bean_icon">bean icon</string>
 </resources>

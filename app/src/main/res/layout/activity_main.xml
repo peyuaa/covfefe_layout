@@ -23,52 +23,82 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
+    <LinearLayout
+        android:id="@+id/reviewsContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/shopNameTextView"
-        android:numStars="5"
-        android:rating="4.7"
-        style="?android:attr/ratingBarStyleSmall" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/reviewCountTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/ratingBar"
-        android:text="@string/reviews_number"
-        android:layout_marginStart="8dp"
-        android:textAppearance="?attr/textAppearanceCaption" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.7"
+            style="?android:attr/ratingBarStyleSmall" />
+
+        <TextView
+            android:id="@+id/reviewCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:text="@string/reviews_number"
+            android:textAppearance="?attr/textAppearanceCaption" />
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ratingBar"
+        android:layout_below="@id/reviewsContainer"
         android:text="@string/shop_description" />
 
     <LinearLayout
         android:id="@+id/beanTypesContainer"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="94dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/arabicaBeanImageView"
-            android:layout_width="154dp"
-            android:layout_height="138dp"
-            android:src="@drawable/vegetarian"
-            android:contentDescription="@string/vegetarian_food_item" />
+            android:id="@+id/vegetarianImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:contentDescription="@string/vegetarian_food_item"
+            android:src="@drawable/vegetarian" />
 
         <ImageView
-            android:id="@+id/robustaBeanImageView"
-            android:layout_width="117dp"
+            android:id="@+id/naturalFoodImageView"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
-            android:src="@drawable/natural_food"
-            android:contentDescription="@string/natural_food_icon" />
+            android:layout_weight="1"
+            android:contentDescription="@string/natural_food_icon"
+            android:src="@drawable/natural_food" />
+
+        <ImageView
+            android:id="@+id/fairTradeImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/fair_trade_icon"
+            android:src="@drawable/fair_trade" />
+
+        <ImageView
+            android:id="@+id/beanImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/bean_icon"
+            android:src="@drawable/bean" />
     </LinearLayout>
 
     <Button
@@ -76,6 +106,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/beanTypesContainer"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="15dp"
         android:text="@string/make_a_call" />
 </RelativeLayout>
